@@ -1,0 +1,109 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<h2><a href="about2.astro">Certification PIX</a></h2>
+		<p>Décembre 2023</p>
+		<img
+		width="553"
+		height="873"
+		src="/assets/pix.jpg"
+		alt=""
+	/>
+</div>
+<div class="stack gap-2 lg:gap-4">
+	<h2><a href="https://developer.nvidia.com/blog/networking-for-data-centers-and-the-era-of-ai/?mkt_tok=MTU2LU9GTi03NDIAAAGO6IhpIBZtX1gddCGP95UPh898Kd8dwA0v3QtEdSdJsbxhy8UN3Z41kp1EokM4u0c7z777bQwHWC9OAn-VkBzvD6HllRQeJpprMo67_304QPSz5ppvr-U">Certification SecNum</a></h2>
+	<p>Décembre 2023</p>
+	<img
+	width="553"
+	height="873"
+	src="/assets/Anssi.jpg"
+	alt=""
+/>
+</div>
+<div class="stack gap-2 lg:gap-4">
+	<h2><a href="https://developer.nvidia.com/blog/networking-for-data-centers-and-the-era-of-ai/?mkt_tok=MTU2LU9GTi03NDIAAAGO6IhpIBZtX1gddCGP95UPh898Kd8dwA0v3QtEdSdJsbxhy8UN3Z41kp1EokM4u0c7z777bQwHWC9OAn-VkBzvD6HllRQeJpprMo67_304QPSz5ppvr-U">Certification Cisco</a></h2>
+	<p>En cours</p>
+	<img
+	width="553"
+	height="873"
+	src="/assets/cisco.jpg"
+	alt=""
+/>
+</div>
+<div class="stack gap-2 lg:gap-4">
+	<h2><a href="https://developer.nvidia.com/blog/networking-for-data-centers-and-the-era-of-ai/?mkt_tok=MTU2LU9GTi03NDIAAAGO6IhpIBZtX1gddCGP95UPh898Kd8dwA0v3QtEdSdJsbxhy8UN3Z41kp1EokM4u0c7z777bQwHWC9OAn-VkBzvD6HllRQeJpprMo67_304QPSz5ppvr-U">Certification sur le RGPD</a></h2>
+	<p>En cours</p>
+	<img
+	width="553"
+	height="873"
+	src="/assets/cnil.jpg"
+	alt=""
+/>
+</div>
+</div>
+<div class="stack gap-2 lg:gap-4">
+	<h2><a href="https://developer.nvidia.com/blog/networking-for-data-centers-and-the-era-of-ai/?mkt_tok=MTU2LU9GTi03NDIAAAGO6IhpIBZtX1gddCGP95UPh898Kd8dwA0v3QtEdSdJsbxhy8UN3Z41kp1EokM4u0c7z777bQwHWC9OAn-VkBzvD6HllRQeJpprMo67_304QPSz5ppvr-U">Certification Toeic</a></h2>
+	<p>En cours</p>
+	<img
+	width="553"
+	height="873"
+	src="/assets/toeic.jpg"
+	alt=""
+/>
+</div>
+</div>
+<div class="stack gap-2 lg:gap-4">
+	<h2><a href="https://developer.nvidia.com/blog/networking-for-data-centers-and-the-era-of-ai/?mkt_tok=MTU2LU9GTi03NDIAAAGO6IhpIBZtX1gddCGP95UPh898Kd8dwA0v3QtEdSdJsbxhy8UN3Z41kp1EokM4u0c7z777bQwHWC9OAn-VkBzvD6HllRQeJpprMo67_304QPSz5ppvr-U">Projet voltaire</a></h2>
+	<p>En cours</p>
+	<img
+	width="553"
+	height="873"
+	src="/assets/volt.jpg"
+	alt=""
+/>
+</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

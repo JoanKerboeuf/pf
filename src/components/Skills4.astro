@@ -1,0 +1,88 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<h2 style="font-size: 1.5rem;"><>Machine virtuelle W/L</a></h2>
+		
+		<img
+		width="553"
+		height="873"
+		src="/assets/VM.jpg"
+		alt=""
+	/>
+	<p>- Mise en place serveur DNS/Proxy</p>
+	<p>- DMZ</p>
+	<p>- Régle de filtrage</p>
+	<p>- VPN</p>
+</div>
+<div class="stack gap-2 lg:gap-4">
+	<h2 style="font-size: 1.5rem;"><>Bash</a></h2>
+
+	<img
+	width="553"
+	height="873"
+	src="/assets/bash.jpg"
+	alt=""
+	
+/>
+<p>- Ligne de commande (Base)</p>
+</div>
+<div class="stack gap-2 lg:gap-4">
+	<h2 style="font-size: 1.5rem;"><>Docker</a></h2>
+	
+	<img
+	width="553"
+	height="873"
+	src="/assets/docker.jpg"
+	alt=""
+/>
+<p>- Docker Compose</p>
+<p>- Réseau Docker</p>
+<p>- Gestion des Images</p>
+</div>
+</div>
+</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

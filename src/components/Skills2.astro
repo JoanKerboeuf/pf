@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<h2><a href="https://blogs.nvidia.com/blog/foxconn-nvidia-electric-vehicle/?ncid=em-news-484650-vt03&mkt_tok=MTU2LU9GTi03NDIAAAGPKHsjqE6Ho7Tv3ku0133zBqIThQSdodtUhQZBNLszmGXVoL_FkrqN8w5M85Af-YUIT2uBaWwYQSq2BarhSue6rI0cVfNmNRxuB4ju6CG59sv-bj9g5lw">NVIDIA et Foxconn</a></h2> 
+		<p>Foxconn et NVIDIA renforcent l'innovation dans les véhicules électriques</p>
+		<img
+					width="553"
+					height="873"
+					src="/assets/foxcon.jpg"
+					alt=""
+				/>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+				<h2><a href="https://developer.nvidia.com/blog/networking-for-data-centers-and-the-era-of-ai/?mkt_tok=MTU2LU9GTi03NDIAAAGO6IhpIBZtX1gddCGP95UPh898Kd8dwA0v3QtEdSdJsbxhy8UN3Z41kp1EokM4u0c7z777bQwHWC9OAn-VkBzvD6HllRQeJpprMo67_304QPSz5ppvr-U">NVIDIA Spectrum-X</a></h2>
+				<p>La mise en réseau pour les centres de données et l'ère de l'IA</p>
+				<img
+				width="553"
+				height="873"
+				src="/assets/spectrumX.jpg"
+				alt=""
+			/>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<h2><a href="https://developer.nvidia.com/blog/unlock-faster-image-generation-in-stable-diffusion-web-ui-with-nvidia-tensorrt/?mkt_tok=MTU2LU9GTi03NDIAAAGO6IhpIM-26yJdnJ7Ad9UudLOQJSdwHqYNa7QucBDrBjWNf3VT6Tml5wAhS0W_Lm8uhkaOTVPfSkNLHWrSfJvT9sOt8rhozDRXtsKk8L48AhJwVAfhSmg">NVIDIA TensorRT</a></h2>
+		<p>Débloquez une génération d'images plus rapide dans l'interface utilisateur Web avec NVIDIA TensorRT" :</p>
+			<img
+				width="1553"
+				height="873"
+				src="/assets/TensorRT.jpg"
+				alt=""
+			/>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

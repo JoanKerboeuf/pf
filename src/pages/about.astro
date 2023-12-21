@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import Skills from '../components/Skills2.astro';
+---
+
+<BaseLayout title="Veille | Joan Kerboeuf" description="A propos de moi">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Veille technologique"
+				tagline=""
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt=""
+				/>
+			</Hero>
+
+			
+			<section>
+				
+				<h2 class="section-title">C'est quoi Nvidia ?</h2>
+				<div class="content">
+					
+					<p>
+						Nvidia est une entreprise technologique de renommée mondiale, 
+						célèbre pour ses avancées dans la conception de processeurs graphiques (GPU) 
+						et ses contributions majeures dans des domaines tels que le <b>jeu, l'intelligence artificielle et le calcul haute performance</b>. 
+						Fondée en 1993, Nvidia est un leader de l'innovation dans l'industrie informatique, 
+						apportant des avancées technologiques qui transforment la manière dont nous utilisons 
+						et percevons la puissance informatique.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Outil de la veille</h2>
+				<div class="content">
+					<p>- Feedlyﾠﾠﾠﾠﾠﾠﾠﾠ- Twitter (X)<br>- Gmailﾠﾠﾠﾠﾠﾠﾠﾠﾠ- Instagram<br>- Google alert</p>
+				</div>
+			</section>
+		</main>
+		<Skills />
+		<div class="stack gap-20 lg:gap-48">
+			<div class="wrapper stack gap-8 lg:gap-20">
+			  <header class="hero">
+				<img
+				  alt=""
+				  width="480"
+				  height="620"
+				  src="/assets/cbnvidia.jpg"
+				/>
+				<a href="https://fr.statista.com/infographie/30234/capitalisation-boursiere-des-societes-americaines-les-mieux-valorisees-plus-de-1000-milliards/" target="_blank">
+					<Hero title="Sa place sur le marché" align="start">
+					  <div class="presentation">
+					  </div>
+					</Hero>
+				  </a>
+				  <div class="presentation">
+					<p>La société a récemment franchi la barre symbolique des 1 000 milliards de dollars de capitalisation boursière<br>
+						 à Wall Street, rejoignant un club très fermé d'entreprises - dans lequel certaines, comme Meta (la société mère de Facebook),<br>
+						 n'ont pas réussi à se maintenir très longtemps.</p>
+				  </div>
+			  </header>
+			</div>
+		  </div>		  
+		  <div class="stack gap-20 lg:gap-48">
+			<div class="wrapper stack gap-8 lg:gap-20">
+			  <header class="hero">
+				<img
+				  alt=""
+				  width="480"
+				  height="620"
+				  src="/assets/amdintel.jpg"
+				/>
+				<Hero
+				  title="Ses principaux concurrents"
+				  align="start"
+				>
+				  <div class="presentation">
+					<p>Nvidia, Intel et AMD se positionnent comme des acteurs clés dans le domaine des semi-conducteurs,
+						 chacun avec des forces et des spécialités distinctes. Nvidia est renommée pour ses solutions GPU, 
+						 particulièrement prisées dans les secteurs du jeu, de l'intelligence artificielle et du calcul parallèle. 
+						 En revanche, Intel, traditionnellement associée aux processeurs, s'oriente de plus en plus vers les GPU discrets, 
+						 intensifiant ainsi la compétition avec Nvidia. AMD, fabricant polyvalent de semi-conducteurs, 
+						 rivalise également sur le marché des cartes graphiques avec sa gamme Radeon, 
+						 et investit dans des domaines tels que les processeurs et les semi-conducteurs personnalisés. 
+						 L'innovation technologique, les partenariats stratégiques, 
+						 et l'adaptation aux évolutions du marché des semi-conducteurs sont autant de facteurs qui façonnent la dynamique concurrentielle 
+						 entre ces entreprises.</p>
+					<!-- Ajoute ici le reste de ton texte de présentation -->
+				  </div>
+				</Hero>
+			  </header>
+			</div>
+		  </div>		  
+	
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
