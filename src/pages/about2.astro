@@ -9,89 +9,77 @@ import Hero from '../components/Hero.astro';
 <link href="\src\styles\global.css" rel="stylesheet">
 
 <BaseLayout title="A propos de moi | Joan Kerboeuf" description="A propos de moi">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="A propos de moi"
-				tagline="Découvrer mon parcours et mes compétences."	
-			></Hero>
+    <div class="stack gap-20">
+        <main class="wrapper about">
+            <Hero
+                title="A propos de moi"
+                tagline="Découvrer mon parcours et mes compétences."    
+            ></Hero>
 
-		<section>
-    <h2 class="section-title">Mon CV</h2>
-    <div class="content">
-        <p>
-           
-                <p>Télécharger mon CV <a href="/assets/CV_Joan_KERBOEUF.pdf">ici</a>.</p>
-            </object>
-        </p>
-    </div>
-</section>
-
+            <section>
+				<h2 class="section-title">Mon parcours</h2>
+				<div class="content">
+					<ul>
+						<li>Dès mon plus jeune âge, l'informatique a été une passion constante dans ma vie. Même si je n'ai pas eu l'opportunité de suivre une filière informatique au lycée, j'ai persévéré dans ma quête de connaissances. Après l'obtention de mon bac, j'ai saisi l'occasion de poursuivre ma formation en m'inscrivant à un BTS en informatique. Cette étape a marqué le début d'un parcours dédié à ma passion, une aventure où chaque jour m'apporte de nouvelles compétences et découvertes passionnantes.</li>
+					</ul>
+				</div>
+			</section>
 			
 			<section>
-    <h2 class="section-title">Mon parcours</h2>
-    <div class="content">
-        <ul>
-            <li>Dès mon plus jeune âge, l'informatique a été une passion constante dans ma vie. Même si je n'ai pas eu l'opportunité de suivre une filière informatique au lycée, j'ai persévéré dans ma quête de connaissances. Après l'obtention de mon bac, j'ai saisi l'occasion de poursuivre ma formation en m'inscrivant à un BTS en informatique. Cette étape a marqué le début d'un parcours dédié à ma passion, une aventure où chaque jour m'apporte de nouvelles compétences et découvertes passionnantes.</li>
-        </ul>
+				<h2 class="section-title">Mon CV</h2>
+				<div class="content">
+					<ul>
+						<li>Télécharger mon CV <a href="/assets/CV_Joan_KERBOEUF.pdf">ici</a>.</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section>
+				<h2 class="section-title">Diplômes</h2>
+				<div class="content">
+					<ul>
+						<li>BAFA (Brevet d'aptitude aux fonctions d'animateur) (2023) - Spécialité assistant sanitaire</li>
+						<li>Baccalauréat Professionnel MELEC (Métier de l’électricité et de ses environnements connectés) (2022) - Mention : Très bien</li>
+						<li>Brevet de secourisme (2017, 2022)</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section>
+				<h2 class="section-title">Formation</h2>
+				<div class="content">
+					<ul>
+						<li>BTS SIO (Service informatiques aux organisations) (2022--2024)</li>
+						<li>Bac Pro MELEC (Métier de l’électricité et de ses environnements connectés) (2019--2022)</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section>
+				<h2 class="section-title">Stage</h2>
+				<div class="content">
+					<ul>
+						<li>Stage au lycée Maurice Ravel à Paris (2022--2024) - Gestion des switch / Script / Réparation PC</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<ul>
+						<li>Machine virtuels (Windows/Linux)</li>
+						<li>Bash (Base)</li>
+						<li>Docker (Base)</li>
+						<li>Montage vidéo/photo (Photoshop/Première Pro)</li>
+					</ul>
+				</div>
+			</section>
+			
+        </main>
+
+        <ContactCTA />
     </div>
-</section>
-
-<section>
-    <h2 class="section-title">Mon CV</h2>
-    <div class="content">
-        <ul>
-            <li>Télécharger mon CV <a href="/assets/CV_Joan_KERBOEUF.pdf">ici</a>.</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2 class="section-title">Diplômes</h2>
-    <div class="content">
-        <ul>
-            <li>BAFA (Brevet d'aptitude aux fonctions d'animateur) (2023) - Spécialité assistant sanitaire</li>
-            <li>Baccalauréat Professionnel MELEC (Métier de l’électricité et de ses environnements connectés) (2022) - Mention : Très bien</li>
-            <li>Brevet de secourisme (2017, 2022)</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2 class="section-title">Formation</h2>
-    <div class="content">
-        <ul>
-            <li>BTS SIO (Service informatiques aux organisations) (2022--2024)</li>
-            <li>Bac Pro MELEC (Métier de l’électricité et de ses environnements connectés) (2019--2022)</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2 class="section-title">Stage</h2>
-    <div class="content">
-        <ul>
-            <li>Stage au lycée Maurice Ravel à Paris (2022--2024) - Gestion des switch / Script / Réparation PC</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2 class="section-title">Skills</h2>
-    <div class="content">
-        <ul>
-            <li>Machine virtuels (Windows/Linux)</li>
-            <li>Bash (Base)</li>
-            <li>Docker (Base)</li>
-            <li>Montage vidéo/photo (Photoshop/Première Pro)</li>
-        </ul>
-    </div>
-</section>
-
-		</main>
-
-		<ContactCTA />
-	</div>
 </BaseLayout>
 
 <style>
