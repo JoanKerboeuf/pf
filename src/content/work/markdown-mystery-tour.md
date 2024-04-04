@@ -27,4 +27,10 @@ L’objectif de cette mission est d’étudier les langages en vue d’élaborer
 					alt=""
 				/>
 L’objectif de cette mission est d’étudier les langages en vue d’élaborer un site web Responsive
-
+<section>
+<div class="content">
+	<ul>
+		<li>Site <a href="/assets/site-mairie/mairie.html">ici</a>.</li>
+	</ul>
+</div>
+</section>
